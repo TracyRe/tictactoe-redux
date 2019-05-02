@@ -1,5 +1,6 @@
 import React from 'react';
 import Board from './Board';
+import { connect } from 'react-redux';
 
 class App extends React.Component {
   constructor(props) {
@@ -101,4 +102,4 @@ function calculateWinner(squares) {
   return null;
 }
 
-export default App;
+export default connect()(App);

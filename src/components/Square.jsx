@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 function Square(props) {
 
@@ -9,4 +10,4 @@ function Square(props) {
     );
   }
 
-export default Square;
+export default connect()(Square);
